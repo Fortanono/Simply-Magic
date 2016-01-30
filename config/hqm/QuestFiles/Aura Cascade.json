@@ -18,7 +18,8 @@
             {
               "item": {
                 "id": "aura:lexicon"
-              }
+              },
+              "precision": "FUZZY"
             }
           ]
         },
@@ -348,6 +349,7 @@
     },
     {
       "name": "Growing in Power",
+      "description": "Violet aura has the property of being able to generate more violet aura while within an Aura Node. However, be carefull: too much or too little of this Aura color will result in the entirety of the violet aura in that node dissapating.",
       "x": 104,
       "y": 123,
       "icon": {
@@ -463,7 +465,6 @@
         "Follow My Lead",
         "Completely Useless?"
       ],
-      "parentrequirement": 1,
       "tasks": [
         {
           "type": "DETECT",
@@ -511,7 +512,8 @@
       ],
       "reward": [
         {
-          "id": "HardcoreQuesting:bags"
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
         }
       ],
       "rewardchoice": [
@@ -618,7 +620,8 @@
             {
               "item": {
                 "id": "aura:fairyRing"
-              }
+              },
+              "precision": "FUZZY"
             }
           ]
         }
@@ -852,7 +855,7 @@
     },
     {
       "name": "Prismatic Consumers",
-      "description": "Many new machines can be made with your Arcane Prism, including a mining reactor, a better Processor that triples your ore output, and a machine to transform the biome into the End.",
+      "description": "Many new machines can be made with your Arcane Prism, including a mining reactor, a better Processor that triples your ore output, and a machine to transform the biome into the End. Construct two of the selection of machines.",
       "x": 188,
       "y": 192,
       "icon": {
@@ -870,6 +873,7 @@
               "item": {
                 "id": "aura:consumerBlockoreAdv"
               },
+              "required": 2,
               "precision": "ORE_DICTIONARY"
             }
           ]
@@ -1095,7 +1099,7 @@
       "reward": [
         {
           "id": "HardcoreQuesting:bags",
-          "damage": 2
+          "damage": 1
         }
       ]
     },
@@ -1159,7 +1163,7 @@
       "reward": [
         {
           "id": "HardcoreQuesting:bags",
-          "damage": 3
+          "damage": 2
         }
       ]
     },
@@ -1186,6 +1190,12 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 4
         }
       ]
     },
@@ -1242,8 +1252,7 @@
       ],
       "reward": [
         {
-          "id": "HardcoreQuesting:bags",
-          "damage": 2
+          "id": "HardcoreQuesting:bags"
         }
       ]
     },
@@ -1275,13 +1284,13 @@
       "reward": [
         {
           "id": "HardcoreQuesting:bags",
-          "damage": 2
+          "damage": 1
         }
       ]
     },
     {
       "name": "Book Storage",
-      "description": "If you\u0027re playing this pack, you\u0027re likely trying to learn magic mods. So you probably already know tech mods. So this is pretty much an ME System powered by Aura. Different Storage Books are placed in Bookshelves, and items can be put into or extracted from these books using the Bookshelf Coordinator.",
+      "description": "Aura Cascade offers its own form of mass item storage. Different Storage Books are placed in Bookshelves, and items can be put into or extracted from these books using the Bookshelf Coordinator. The system is run off of \"power\" and requires a constant input in order to function. The system can be expanded and books may be upgraded to store many more items.",
       "x": 221,
       "y": 188,
       "icon": {
@@ -1309,6 +1318,41 @@
             {
               "item": {
                 "id": "aura:basicBook"
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Aura Cascade Playthings",
+      "description": "Aura Cascade offers a variety of tools and equipment often used in mining and building. Construct two items!",
+      "x": 252,
+      "y": 138,
+      "icon": {
+        "id": "aura:prismaticWand",
+        "damage": 2,
+        "nbt": "{z1:875,y1:3,z2:874,x1:-428,y2:3,x2:-427}"
+      },
+      "prerequisites": [
+        "Taste the Rainbow"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:prismaticWand",
+                "nbt": "{z1:875,y1:3,z2:874,x1:-428,y2:3,x2:-427}"
               },
               "precision": "ORE_DICTIONARY"
             }
